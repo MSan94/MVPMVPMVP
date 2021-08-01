@@ -1,0 +1,20 @@
+## STEP1 Contract Interface는 왜 필요할까?!
+- Contract Interface를 빼더라도 구현이 가능하긴 하다.
+- 장점 
+  - 문서의 역할
+  - Presenter와 View 간 상호작용에 대한 설계를 도와준다.
+  - 의사소통의 도움이 된다.
+- 단점
+  - 보일러플레이트 코드가 많아진다. -> Contract를 계속 생산
+  - 코드 수정시 Contract를 고쳐야 함으로 오버헤드 발생
+
+
+- Contract 
+  - Contract 인터페이스를 통해 View Interface, Presenter Interface 정의
+  - BaseView, BasePresenter에는 모든 View와 Presenter에 공통적으로 들어갈 부분 정의
+- View Interface
+  - Activity or Fragment (View)에 상속
+  - Presenter에서 View를 컨트롤할 때 사용
+- 즉, Contract를 정의함으로서 대략적인 코드를 이해할 수 있다.
+
+
