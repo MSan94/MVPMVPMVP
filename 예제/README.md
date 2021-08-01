@@ -8,7 +8,7 @@
   - 보일러플레이트 코드가 많아진다. -> Contract를 계속 생산
   - 코드 수정시 Contract를 고쳐야 함으로 오버헤드 발생
 
-
+## STEP2 그럼 Contract는 무엇일까?!
 - Contract 
   - Contract 인터페이스를 통해 View Interface, Presenter Interface 정의
   - BaseView, BasePresenter에는 모든 View와 Presenter에 공통적으로 들어갈 부분 정의
