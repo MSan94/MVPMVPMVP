@@ -18,6 +18,24 @@
 - 즉, Contract를 정의함으로서 대략적인 코드를 이해할 수 있다.
 
 ## STEP3 Google MVP 예제 알아보기
+- BasePresenter
+  - BasePresenter는 start()를 가지고 있다.
+```
+interface BasePresenter {
+    fun start()
+}
+```
+- BaseView
+  - Presenter를  View에 전달하는 변수가 기본값으로 추가되어 있다.
+```
+interface BaseView<T> {
+
+    var presenter: T
+
+}
+```
+- Activity에서 Presenter를 생성하고, 이를 Fragment(View)에서 전달받아 동일한 Presenter를 양쪽에서 가지고 있도록 만들었습니다.
+
 - Contract
 ```
 interface TasksContract {
